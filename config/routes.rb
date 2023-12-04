@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  # Defines the root path route ("/")
+  resources :customers
   root 'welcome#index'
 end
