@@ -12,4 +12,10 @@ RSpec.feature "Customers", type: :feature do
     expect(page).to have_content('Listando Clientes')
     expect(page).to have_content('Novo Cliente')
   end
+
+  scenario 'Verifica formulário de Novo Cliente' do
+    visit(customers_path)
+    click_on('Novo Cliente')
+    expect(page).to have_content('Novo Cliente')
+  end
 end
