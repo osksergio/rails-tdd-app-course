@@ -1,6 +1,6 @@
-<% if @customer.errors.any? %>
+<% if customer.errors.any? %>
   <ul>
-    <% @customer.errors.each do |error| %>
+    <% customer.errors.each do |error| %>
       <li><%= error.full_message %></li>
     <% end %>
   </ul>
