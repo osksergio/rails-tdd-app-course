@@ -17,6 +17,9 @@ class CustomersController < ApplicationController
     end
   end
 
+  def show
+  end
+
   def customer_params
     params.require(:customer).permit(:id, :name, :email, :smoker, :phone, :avatar)
   end
