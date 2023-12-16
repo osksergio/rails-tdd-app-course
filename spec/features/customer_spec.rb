@@ -49,7 +49,7 @@ RSpec.feature "Customers", type: :feature do
       avatar: "#{Rails.root}/spec/fixtures/avatar.png"
     )
 
-    visit(customers_path(custumer.id))
+    visit(customer_path(customer.id))
     expect(page).to have_content(customer.name)
   end
 end
