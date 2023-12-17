@@ -51,5 +51,7 @@ RSpec.feature "Customers", type: :feature do
 
     visit(customer_path(customer.id))
     expect(page).to have_content(customer.name)
+    expect(page).to have_content(customer.email)
+    expect(page).to have_content(customer.phone)
   end
 end
