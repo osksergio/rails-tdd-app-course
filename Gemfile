@@ -57,6 +57,8 @@ group :development, :test do
   gem 'rspec-rails', '~>  6.0.3'
   gem 'capybara'
   gem 'faker'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
 
 group :development do
