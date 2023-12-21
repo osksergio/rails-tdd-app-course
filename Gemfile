@@ -59,6 +59,7 @@ group :development, :test do
   gem 'faker'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'factory_bot_rails', '~> 6.4', '>= 6.4.2'
 end
 
 group :development do
